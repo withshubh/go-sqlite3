@@ -10,4 +10,3 @@ enabled = true
 
   [analyzers.meta]
   import_paths = ["github.com/withshubh/go-sqlite3"]
-  dependencies_vendored = "false"
