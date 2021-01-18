@@ -1284,9 +1284,7 @@ func TestFunctionRegistration(t *testing.T) {
 	addiu := func(a int, b uint) int64 { return int64(a) + int64(b) }
 	addf32_64 := func(a float32, b float64) float64 { return float64(a) + b }
 	not := func(a bool) bool { return !a }
-	regex := func(re, s string) (bool, error) {
-		return regexp.MatchString(re, s)
-	}
+	regex := regexp.MatchString
 	generic := func(a interface{}) int64 {
 		switch a.(type) {
 		case int64:
